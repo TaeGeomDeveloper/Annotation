@@ -1,0 +1,22 @@
+#member_table{
+    border: 5px solid black;
+}
+
+#member_table th{
+    color: white;
+    background-color: black;
+}
+
+#member_table th,td {
+    border: 3px solid black;
+    padding: 10px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+   width: 600px;
+}
+
+#content {
+    height : 500px;
+}

@@ -1,0 +1,15 @@
+
+#list_table{
+    border: 5px solid black;
+}
+
+#list_table th{
+    color: white;
+    background-color: black;
+}
+
+#list_table th,td {
+    border: 3px solid black;
+    padding: 10px;
+    font-weight: bold;
+}

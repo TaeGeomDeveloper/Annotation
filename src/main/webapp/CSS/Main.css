@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Jua', sans-serif;
+}
+
+header {
+    background-color: chocolate;
+    padding: 20px;
+    text-align: center;
+    font-size: 100px;
+    color: white;
+}
+
+section {
+    background-color: darkorange;
+    display: -webkit-flex;
+    display: flex;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background: darkorange;
+    padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+article {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    background-color: orange;
+    height: auto; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+    display: table;
+    clear: both;
+}
+
+@media (max-width: 600px) {
+    nav, article {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    }
+}
+
+
+/*네비게이터*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.active {
+    background-color: #04AA6D;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+#Main_Box {
+    padding: 15px;
+}
+
+
+/* Style the footer */
+footer {
+    background-color: chocolate;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}

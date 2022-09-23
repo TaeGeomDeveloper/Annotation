@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+http://www.springframework.org/schema/aop
+http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+<!--    빈 태그를 이용하여 id가 DAO인 빈을 생성하고 <constructort-arg> 태그를 이용해 생성자 호출시 태그값 전달 -->
+<!--    <bean id="GuestBookDAO" class="dao.GuestBookDAO">-->
+<!--        <constructor-arg name="dataSource" ref="dataSource"></constructor-arg>-->
+<!--    </bean>-->
+
+</beans>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="4">
+  <component name="FacetManager">
+    <facet type="Spring" name="Spring">
+      <configuration>
+        <fileset id="fileset" name="Action DataSource" removed="false">
+          <file>file://$MODULE_DIR$/src/main/webapp/WEB-INF/config/action-dataSource.xml</file>
+          <file>file://$MODULE_DIR$/src/main/webapp/WEB-INF/config/action-mybatis.xml</file>
+          <file>file://$MODULE_DIR$/src/main/webapp/WEB-INF/config/action-service.xml</file>
+          <file>file://$MODULE_DIR$/src/main/webapp/WEB-INF/action-servlet.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+</module>

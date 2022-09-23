@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="mapper.guestbook">
+    <resultMap id="guestResult" type="GuestVO">
+        <result property="id" column="id" />
+        <result property="pwd" column="pwd" />
+        <result property="name" column="name" />
+        <result property="email" column="email" />
+        <result property="joinDate" column="joinDate" />
+    </resultMap>
+
+    <select id="selectAll" resultMap="guestResult">
+        <![CDATA[
+            SELECT * FROM member
+        ]]>
+    </select>
+
+    <select id="selectOne" resultMap="guestResult">
+        <![CDATA[
+            SELECT * FROM member where id = #{id}
+        ]]>
+    </select>
+
+    <insert id="InsertOne" parameterType="java.util.Map">
+        <![CDATA[
+            Insert into member (id,pwd,name,email)
+            values(#{id},#{pwd},#{name},#{email})
+        ]]>
+    </insert>
+
+    <update id="updateOne" parameterType="GuestVO">
+        <![CDATA[
+            update member set pwd = #{pwd}, name = #{name}, email = #{email} where id = #{id}
+        ]]>
+    </update>
+
+    <delete id="deleteOne" parameterType="GuestVO">
+        <![CDATA[
+            delete from member where id = #{id}
+        ]]>
+    </delete>
+
+</mapper>
